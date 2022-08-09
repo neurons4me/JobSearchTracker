@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>What is the purpose of this communication?</inlineHelpText>
+    <label>Type</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Discovery</fullName>
+                <default>true</default>
+                <label>Discovery</label>
+            </value>
+            <value>
+                <fullName>Coordination</fullName>
+                <default>false</default>
+                <label>Coordination</label>
+            </value>
+            <value>
+                <fullName>First Round Interview</fullName>
+                <default>false</default>
+                <label>First Round Interview</label>
+            </value>
+            <value>
+                <fullName>Second Round Interview</fullName>
+                <default>false</default>
+                <label>Second Round Interview</label>
+            </value>
+            <value>
+                <fullName>Third Round+ Interview</fullName>
+                <default>false</default>
+                <label>Third Round+ Interview</label>
+            </value>
+            <value>
+                <fullName>Offer Discussion</fullName>
+                <default>false</default>
+                <label>Offer Discussion</label>
+            </value>
+            <value>
+                <fullName>Postmortem</fullName>
+                <default>false</default>
+                <label>Postmortem</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

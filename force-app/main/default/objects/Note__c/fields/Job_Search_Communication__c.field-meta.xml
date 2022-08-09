@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Search_Communication__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>Job Search Tracker relationship</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If this note is about a communication link it here.</inlineHelpText>
+    <label>Job Search Communication</label>
+    <referenceTo>Job_Search_Communication__c</referenceTo>
+    <relationshipLabel>Notes</relationshipLabel>
+    <relationshipName>Notes</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

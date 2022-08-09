@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Open_Application_Count__c</fullName>
+    <externalId>false</externalId>
+    <label>Open Application Count</label>
+    <summaryFilterItems>
+        <field>Application__c.Status__c</field>
+        <operation>notContain</operation>
+        <value>Hired, Discontinued by Applicant, Discontinued by Company</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Application__c.Role__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

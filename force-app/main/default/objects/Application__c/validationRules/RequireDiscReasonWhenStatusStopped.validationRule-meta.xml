@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RequireDiscReasonWhenStatusStopped</fullName>
+    <active>true</active>
+    <description>Require a value in Discontinuation Reason when the status is either Applicant Stopped or Company Stopped</description>
+    <errorConditionFormula>(ISPICKVAL( Status__c, &apos;Applicant Stopped&apos;) || ISPICKVAL( Status__c, &apos;Company Stopped&apos;) ) &amp;&amp;  ISPICKVAL( Discontinuation_Reason__c , &apos;&apos;)</errorConditionFormula>
+    <errorDisplayField>Discontinuation_Reason__c</errorDisplayField>
+    <errorMessage>Choose a value for Discontinuation Reason</errorMessage>
+</ValidationRule>
