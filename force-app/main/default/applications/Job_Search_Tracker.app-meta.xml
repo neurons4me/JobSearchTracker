@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <content>Job_Search_at_a_Glance</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+    </actionOverrides>
     <brand>
         <headerColor>#DA1963</headerColor>
         <logo>motivation</logo>
@@ -9,15 +17,16 @@
     <description>Track your conversations with recruiters, interviews, applications and use the power of CRM to land your next role!</description>
     <formFactors>Small</formFactors>
     <formFactors>Large</formFactors>
-    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
-    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavAutoTempTabsDisabled>true</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>true</isNavPersonalizationDisabled>
     <label>Job Search Tracker</label>
     <navType>Standard</navType>
-    <tabs>standard-Contact</tabs>
+    <setupExperience>all</setupExperience>
+    <tabs>standard-home</tabs>
+    <tabs>Quick_Add_Tools</tabs>
     <tabs>standard-Account</tabs>
-    <tabs>standard-Dashboard</tabs>
-    <tabs>standard-report</tabs>
     <tabs>Application__c</tabs>
+    <tabs>standard-Contact</tabs>
     <tabs>Job_Search_Communication__c</tabs>
     <tabs>Role__c</tabs>
     <uiType>Lightning</uiType>
